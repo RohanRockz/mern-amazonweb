@@ -16,7 +16,7 @@ app.use(cookieParser(""));
 app.use(cors());
 app.use(router);
 
-const port=8005;
+const port=process.env.PORT || 8005
 app.listen(port,()=>{
     console.log(`server is running on port number ${port}`);
 });
